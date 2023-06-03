@@ -7,6 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 
 
 #[ORM\Entity(repositoryClass: PodcastRepository::class)]
+#[ORM\Table(name:'popcast')]
+
 class Podcast
 {
     #[ORM\Id]
