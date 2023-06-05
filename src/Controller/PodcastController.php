@@ -36,7 +36,6 @@ class PodcastController extends AbstractController
         $data = $request->request->all();
         $podcast = new Podcast();
         $podcast->setTitle($data['title']);
-     
         $podcast->setUploadDate (new \DateTimeImmutable ('Europe/Madrid'));
         $podcast->setDescription($data['description']);
 
